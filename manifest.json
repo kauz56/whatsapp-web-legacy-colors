@@ -1,0 +1,12 @@
+{
+    "name": "WhatsApp Web – Legacy Colors",
+    "description": "",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/"],
+            "css": ["./inject.css"]
+        }
+    ]
+}
