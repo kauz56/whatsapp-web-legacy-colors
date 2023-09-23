@@ -1,12 +1,15 @@
 {
     "name": "WhatsApp Web – Legacy Colors",
-    "description": "",
+    "description": "Reverts the 2022 color update",
     "version": "1.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "content_scripts": [
         {
             "matches": ["https://web.whatsapp.com/"],
             "css": ["./inject.css"]
         }
+    ],
+    "host_permissions": [
+        "https://web.whatsapp.com/"
     ]
 }
